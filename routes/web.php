@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/5e-character-generator', 'CharacterGeneratorController@generate');
+
+Route::get('/randomizer', '5eCharacterRandomizerController@generate');
